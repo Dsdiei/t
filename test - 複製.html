@@ -1,0 +1,36 @@
+<!DOCTYPE html> 
+<html lang="en">
+
+ <head>
+ <meta charset="UTF-8">
+
+ <title>Document</title>
+
+ </head>
+
+ <body> 
+<audio controls id="mymp3"> 
+<source src="D:\Data\03000673\Desktop\test\MENU ver.2.m4a" type="audio/mpeg"> 
+</audio> 
+<button id="btplay" >
+<img src="D:\Data\03000673\Desktop\test\8c52a851-9969-4702-9997-0a2ca9f43773.png"
+ width="150" height="150"  ait="播放">
+</button> 
+
+ <input type="image"  name="btpause"  id="btpause"  img  src="D:\Data\03000673\Desktop\test\8c52a851-9969-4702-9997-0a2ca9f43773.png" width="150" height="150"  onClick="document.form1.submit()" >
+
+ 
+<script> 
+var ebtplay = document.querySelector("#btplay"); 
+var ebtpause = document.querySelector("#btpause"); 
+var emymp3 = document.querySelector("#mymp3");
+ebtplay.onclick = function () { 
+emymp3.play(); 
+}; 
+ebtpause.onclick = function () { 
+emymp3.pause(); 
+} 
+</script>
+
+ </body>
+ </html>
